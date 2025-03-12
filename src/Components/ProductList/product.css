@@ -1,0 +1,87 @@
+/* Ensure all cards have the same height */
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Flexbox to keep the card content in a column */
+    height: 100%; 
+    /* Make sure the card takes full available height */
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .product-card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    
+  }
+  
+  .product-image {
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .product-card:hover .product-image {
+    transform: scale(1.05);
+  }
+  
+  .product-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px; /* Add margin for spacing */
+  }
+  
+  .product-description {
+    font-size: 0.9rem;
+    color: #777;
+    height: 50px; /* Limit description height */
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+  
+  .product-price {
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 15px; /* Space between price and button */
+  }
+  
+  .details-btn {
+    width: 100%;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: auto; /* Push the button to the bottom of the card */
+  }
+  
+  .details-btn:hover {
+    background-color: #0056b3;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Equal width and height for each card */
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 767px) {
+    .product-card {
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .product-title {
+      font-size: 1.2rem;
+    }
+    .product-description {
+      font-size: 1rem;
+    }
+  }
+  

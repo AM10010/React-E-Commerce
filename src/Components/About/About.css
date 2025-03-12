@@ -1,0 +1,41 @@
+.team-section h5{
+    text-transform: uppercase;
+}
+.stats div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.faStore {
+    background-color: black;
+    color: white;
+    padding: 10px;  
+    border-radius: 50%;
+    font-weight: lighter;
+    height: 50px;
+    width: 50px;
+}
+.faStore:hover{
+    background-color: white;
+}
+.store{
+    background-color: #747475;
+    padding: 10px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    font-weight: lighter;
+    margin: 10px;
+}
+.item h4{
+    font-family: "Inter", sans-serif;
+font-weight: 700;
+font-size: 32px;
+line-height: 30px;
+letter-spacing: 4%;
+}
+.item:hover{
+    background-color: #DB4444;
+    color: white;
+}
